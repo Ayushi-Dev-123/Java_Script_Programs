@@ -1,0 +1,38 @@
+<html>
+    <body>
+        <p id = "p1"> </p>
+        <i id = "i1"> </i>
+		<div id = "div1" > </div>
+    </body> 
+    <script>
+		var x = 10;
+		var y ;
+		var z = 'Hello';
+		var a = "Hey";
+		var b = true;
+		var c = 1.5;
+		var no = null;
+		document.write(' "Welcome to the java script" '+"<br>");
+		document.write("<br> type of x : " + x + " : " + typeof(x) );
+		document.write("<br> type of y : " + y + " : " + typeof(y));
+		document.write("<br> type of z : " + z + " : " + typeof(z));
+		document.write("<br> type of a : " + a + " : " + typeof(a));
+		document.write("<br> type of b : " + b + " : " + typeof(b));
+		document.write("<br> type of c : " + c + " : " + typeof(c));
+        document.write("<br> type of no : " + no + " : " +typeof(no));
+        document.write("<br> (x===no) : " + (x===no));
+		document.write("<br> (x==y) : " + (x==y));
+
+        var pObj = document.getElementById("p1");
+        document.write("<br><br> p tag : " + pObj.constructor.name); 		
+
+        var iObj = document.getElementById("i1");
+		document.write("<br> i tag : " + iObj.constructor.name);
+		
+		var divObj = document.getElementById("div1");
+		document.write("<br> div tag : " + divObj.constructor.name)
+	    
+	
+		//document.write("<br> type of ")
+	</script>
+</html>

@@ -1,0 +1,46 @@
+<script>
+    var arr = [10,20,30,40,50];
+	document.write("First type");
+    for(var i=0; i<arr.length; i++){
+	   document.write(arr[i] + "<br>");
+	} 	
+	document.write("<br>Second type of array declaration");
+	var arr1 = new Array(5);
+	arr1[0] = 10;
+	arr1[1] = 20;
+	arr1[3] = 30;
+	for(var i=0;i<arr1.length;i++){
+	    document.write("<br>"+arr1[i]);
+	}
+	
+	/*document.write("<br>Second type");
+	for(index in arr){
+	    document.write("<br>"+arr); 
+	}
+	*/
+	arr.push(100); //insert element at last position
+	document.write("<br>Element pushed ");
+	for(var i=0;i<arr.length;i++){
+	    document.write("<br>"+arr[i]);
+	}
+	arr.pop(); //remove last element
+	document.write("<br>Element is poped ");
+	for(var i=0;i<arr.length;i++){
+	    document.write("<br>"+arr[i]);
+	}
+	arr.shift(); //remove element from first position
+	document.write("<br>Element is shifted ");
+	for(var i=0;i<arr.length;i++){
+	    document.write("<br>"+arr[i]);
+	}
+   	arr.unshift(100); // insert element on first position
+	document.write("<br>Element is unshift ");
+	for(var i=0;i<arr.length;i++){
+	    document.write("<br>"+arr[i]);
+	}
+    delete arr[1]; //delete element from position
+	document.write("<br>Element is deleted ");
+	for(var i=0;i<arr.length;i++){
+	    document.write("<br>"+arr[i]);
+	}
+</script>

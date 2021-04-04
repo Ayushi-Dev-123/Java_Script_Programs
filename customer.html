@@ -1,0 +1,32 @@
+<script>
+   var customer = {
+      'cId' : 1, 'cName' : 'abc', 'cAge':20, 'showInfo': function(){
+      	  document.write("Id : "+ this.cId);
+      	  document.write("<br>Name : "+ this.cName);
+      	  document.write("<br>Age : "+this.cAge); 
+      } 
+   };
+   customer.showInfo();
+   //start another function
+   function cus(){
+   	    this.setData = function(cid,cname,cage){
+   	   	this.cid = cid;
+   	   	this.cname = cname;
+   	   	this.cage = cage;
+   	   }
+   	   this.setMobile = function(mobile){
+   	  	   this.mobile = mobile;
+   	   }
+   	   this.showInfo = function(){
+   	   	   document.write("<br><br>Id : "+this.cid);
+   	   	   document.write("<br>Name : "+this.cname);
+   	   	   document.write("<br>Age : "+this.cage);
+   	   	   document.write("<br>Mobile : "+this.mobile);
+   	   }
+   }
+   var c1 = new cus();
+   c1.setMobile('9091234567');
+   c1.setData(101,'ABC',20);
+   c1.showInfo();
+   //End
+</script>

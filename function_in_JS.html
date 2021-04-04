@@ -1,0 +1,22 @@
+<script>
+	function f1(){
+		document.write("<br>f1-Called...");  
+	}
+	function add(a, b, c){
+		document.write("<br>Addition : " + (a + b + c));
+
+	}
+	add(1,2,3); //6
+	add();       //NAN
+	add(10,20); //NAN
+	//f1();
+	var x = f1();                  
+	document.write("<br>x : "+x); //undefined
+
+	var fun ;
+	fun = function(){
+		document.write("<br>Called...");
+	};
+	fun();
+	
+</script>

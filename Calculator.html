@@ -1,0 +1,27 @@
+<script>
+	document.write("Press 1 for addition <br>Press 2 for Subtraction <br>Press 3 for multiplication <br>Press 4 for division <br>Press 5 for modulus");
+	var choice = prompt("Enter your choice : ");
+	switch(choice){
+	    case 1 :var n1 = prompt("Enter n1 : ");
+		        var n2 = prompt("Enter n2 : ");  
+	            document.write("<br>Addition : "+(parseInt(n1)+parseInt(n2)));
+			    break;
+		case 2 ://takeInput();
+                document.write("<br>Subtraction : "+ (n1-n2));
+                break;
+        case 3 ://takeInput();
+                document.write("<br>Multiplication : "+ (n1*n2));
+                break;
+        case 4 ://takeInput();
+                document.write("<br>Division : "+ (n1/n2));
+                break;
+        case 5: //takeInput();
+                document.write("<br> Modulus : "+(n1%n2));
+                break; 				
+       	default : documnt.write("<br>Wrong Entry!!!");			
+	}
+	/*function takeInput(){
+        var n1 = prompt("Enter n1 : ");
+	    var n2 = prompt("Enter n2 : ");
+	}*/
+</script>

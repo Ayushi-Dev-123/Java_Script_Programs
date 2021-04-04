@@ -1,0 +1,32 @@
+<script>
+	var data = [
+	{
+	    "name": "Lennart Johansson",
+		"city": "Stockholm"
+	},
+	{
+		"name": "Karl Eriksson",
+		"city": "London"
+	},
+	{
+		"name": "Pekka Hartikainen",
+		"city": "Helsinki"
+	},
+	{
+		"name": "Mia Svensson",
+		"city": "Berlin"
+	}
+	];
+	document.write("<table border=1 width='30%'>");
+    document.write("<tr>");
+	document.write("<td>name</td>");
+	document.write("<td>city</td>");
+    document.write("</tr>"); 
+	for(index in data){
+        document.write("<tr>");
+        document.write("<td>"+ data[index].name+"</td>"); 	 
+        document.write("<td>"+data[index].city+"</td>");
+        document.write("</tr>");		
+	}
+	document.write("</table>");
+</script>

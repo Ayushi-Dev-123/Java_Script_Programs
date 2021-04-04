@@ -1,0 +1,12 @@
+<script>
+   function add(a,b,c){
+   	   document.write("<br>a : "+a);
+   	   document.write("<br>b : "+b);
+   	   //document.write("<br>c : "+c);
+   	   c();
+   }
+   //add(10,20,30);
+   add(10,20, function(){
+   	  document.write("<br>Function called...");  
+   });
+</script>
